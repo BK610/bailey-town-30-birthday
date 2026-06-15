@@ -38,8 +38,7 @@
     body {
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
-      /* background-color: #eddfd3; */
-      /* color: #302f2f; */
+      font-family: sans-serif;
     }
 
     img,
@@ -81,11 +80,7 @@
     }
     h1,
     h2,
-    h3 {
-      font-family: "Aleo", serif;
-    }
-
-    #root,
+    h3 #root,
     #__next {
       isolation: isolate;
     }
