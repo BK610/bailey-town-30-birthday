@@ -15,6 +15,11 @@ dev:
 preview:
     pnpm run preview
 
+# Push the code to all git mirrors
+push:
+    git push origin main
+    git push tangled main
+
 # Generate Cloudflare types
 gen-types:
     pnpm run gen
