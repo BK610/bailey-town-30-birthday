@@ -7,9 +7,22 @@ list:
 build:
     pnpm run build
 
+# Run type checks
+check:
+    pnpm run check
+
+# Commit all files
+commit message:
+    git add .
+    git commit -m "{{ message }}"
+
 # Run the dev server
 dev:
     pnpm run dev
+
+# Generate Cloudflare types
+gen-types:
+    pnpm run gen
 
 # Preview the project
 preview:
@@ -20,9 +33,9 @@ push:
     git push origin main
     git push tangled main
 
-# Generate Cloudflare types
-gen-types:
-    pnpm run gen
+# Run tests
+test:
+    pnpm run test
 
 # Run Wrangler commands
 wrangle *args:
